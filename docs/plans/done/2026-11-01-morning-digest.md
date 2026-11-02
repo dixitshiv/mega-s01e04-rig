@@ -1,8 +1,9 @@
 ---
 plan: morning-digest
-status: ready
+status: done
 owner: rook
 opened: 2026-10-29
+closed: 2026-11-01
 ---
 
 # Morning digest
@@ -77,3 +78,15 @@ page again with `LANE_MARKER` unset (the banner reads "no marker set") and uploa
 link. Move this plan to `docs/plans/done/` with its issue list.
 
 Done when: the preview link no longer shows the lane marker.
+
+## Issue list
+
+- [#1 Read and aggregate a night's run log](https://github.com/dixitshiv/mega-s01e04-rig/issues/1) — closed. Worker: Codex · gpt-6-astra · high. Integrated commits: `e1e976c`, `98c29f5`.
+- [#2 Render the digest page](https://github.com/dixitshiv/mega-s01e04-rig/issues/2) — closed. Worker: Codex · gpt-6-luna · medium. Integrated commit: `886bfcf`.
+- [#3 Serve digest JSON](https://github.com/dixitshiv/mega-s01e04-rig/issues/3) — closed. Worker: Codex · gpt-6-luna · medium. Integrated commits: `e5605d0`, `2a8f559`.
+- [#4 Link nights from the status board](https://github.com/dixitshiv/mega-s01e04-rig/issues/4) — closed. Worker: Codex · gpt-6-luna · medium. Integrated commit: `504d885`.
+- [#5 Test digest routes](https://github.com/dixitshiv/mega-s01e04-rig/issues/5) — closed. Worker: Codex · gpt-6-luna · medium. Integrated commit: `072b109`.
+- [#6 Publish and submit the review preview](https://github.com/dixitshiv/mega-s01e04-rig/issues/6) — closed after the reviewer confirmed they had seen the preview. Worker: Codex · gpt-6-luna · medium. Commit: none.
+- [#7 Remove the preview marker and archive the plan](https://github.com/dixitshiv/mega-s01e04-rig/issues/7) — marker removal and plan archive complete in this commit. Worker: Codex · gpt-6-luna · medium. Commit: this archive commit.
+
+The marker-free replacement was verified live at the same public preview URL. It returns HTTP 200, shows the `no marker set` banner, contains five digest rows and no scripts, and has no lane marker. Issue #6 was closed after the reviewer explicitly confirmed they had seen the preview.
